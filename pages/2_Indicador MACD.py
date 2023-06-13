@@ -45,7 +45,7 @@ with st.container():
     st.plotly_chart(fig, use_container_width=True)
 
 with st.container():
-    fig = px.line(macd_30_min, x=macd_30_min.index, y=macd_30_min['macd'])
+    fig = px.line(macd_30_min, x=macd_30_min.index, y=macd_30_min['macdh'])
     fig.update_layout(
         xaxis_title="Index",
         yaxis_title="MACD",
@@ -73,7 +73,7 @@ with st.container():
     st.plotly_chart(fig, use_container_width=True)
 
 with st.container():
-    fig = px.line(macd_4_horas, x=macd_4_horas['date_price'], y=macd_4_horas['volume'])
+    fig = px.line(macd_4_horas, x=macd_4_horas['date_price'], y=macd_4_horas['macdh'])
     fig.update_layout(
         xaxis_title="Date",
         yaxis_title="MACD",
@@ -100,7 +100,7 @@ with st.container():
     st.plotly_chart(fig, use_container_width=True)
 
 with st.container():
-    fig = px.line(macd_4_dias, x=macd_4_dias['date_price'], y=macd_4_dias['volume'])
+    fig = px.line(macd_4_dias, x=macd_4_dias['date_price'], y=macd_4_dias['macdh'])
     fig.update_layout(
         xaxis_title="Date",
         yaxis_title="MACD",
