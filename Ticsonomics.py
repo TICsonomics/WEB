@@ -11,19 +11,20 @@ st.sidebar.header("Ticsonomics")
 # Hi, we're Ticsonomics 👋
 ---
 🧙 Welcome to our GitHub
+---
 
 Final project for the Distributed Computing subject, at ENES' Morelia B. Sc. Program "Tecnologías para la Información en Ciencias" (https://www.enesmorelia.unam.mx/)
 
 Welcome to our  crypto-trading AI Platform! In this project, we aim to process historical data of cryptocurrencies to identify patterns and trends within their behavior, to understand their behavior in the market, identify trends and make informed decisions in the field of investment. Through the analysis of prices and other relevant indicators, such as KDJK, MACD, PPSR, and MACD, offer useful insights for investors, and allow them to use this information to make informed trading decisions.
 
-____
+__
 # Team_Members :family:
 
-* José Ignacio Ireta. ([ignacio-ireta](https://github.com/ignacio-ireta))
+* José Ignacio Esparza Ireta. ([ignacio-ireta](https://github.com/ignacio-ireta))
 * María Lucrecia Beltz González ([LucreciaBeltz](https://github.com/LucreciaBeltz))
 * Miguel Ángel Zamorano Presa. ([miguelzpresa](https://github.com/miguelzpresa))
 
-____
+__
 # License :space_invader:
 Copyright © 2023 <mikezpresa@gmail.com,ignacio.ireta@outlook.com>
 
@@ -33,17 +34,17 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-____
+__
 # Introduction :microscope:
 
 
 
 The world of cryptocurrency is highly volatile, with prices fluctuating wildly within a matter of hours. To be successful in this space, traders must have a deep understanding of the behavior of each cryptocurrency they are trading. This is where data analysis comes in - by analyzing large amounts of historical data, we can identify patterns and trends that may not be visible through simple observation.
 
-We have chosen to focus on several key indices, including: RSI_14, MACD, Stochastic Oscillator & PPSR(ivot Points, Supports, and Resistances )as these indices have proven to be effective in predicting market trends and making informed trading decisions. By calculating these indices for our univariate cripto system, we can identify potential entry and exit points for trades, and make more profitable trading decisions.
+We have chosen to focus on several key indices, including: RSI_14, MACD, Stochastic Oscillator & PPSR(ivot Points, Supports, and Resistances )as these indices have proven to be effective in predicting market trends and making informed trading decisions. By calculating these indices for our univariate crypto system, we can identify potential entry and exit points for trades, and make more profitable trading decisions.
 
-The TICSonomics project will focus on the analysis of the XRP cryptocurrency  using the information provided by the Coingecko API. The main objective is to create an artificial intelligence model that processes and stores this data to make decisions based on machine learning techniques and, finally, deploy the model in a web app accessible to users. 
-In this project, we created a system that processes historical data  of the behavior of the XRP cryptocurrency price and then sends it to our website. The project is divided into 5 phases, each with its own objectives and challenges.
+The TICSonomics project will focus on the analysis of the XRP cryptocurrency  using the information provided by the Coingecko API. The main objective is to create an a system  that processes and stores this data to make decisions based on Technical Analysis and, finally, deploy the service in a web app accessible to users. 
+In this project, we created a system that processes historical data  of the behavior of the XRP cryptocurrency price and then sends it to our website (https://lucreciabeltz-web-ticsonomics-streamlit-conf-au87n3.streamlit.app/). The project is divided into 5 phases, each with its own objectives and challenges.
 
 
 
@@ -90,6 +91,12 @@ path_arqui_image = 'images/Ticsonomics.png'
 st.image(path_arqui_image)
 
 '''
+---
+
+
+
+
+
 ---
 # Objectives_of_each_Phase :pushpin:
 ---
@@ -160,8 +167,7 @@ Our Processing System code represents generates and processes data related to cr
 Functionalities  :
  The system consists of various functions:     
 -RSI14(df, n): Calculates the RSI14 of a given DataFrame df using a specified window size n. The function adds the RSI_14 column to the DataFrame.  
--MACD(df): This function calculates the Moving Average Convergence Divergence (MACD) indicator for a given DataFrame df. Currently, it is commented out and not used in the code.    
--MOM(df, n): Computes the Momentum indicator for a given DataFrame df using a specified period n. The function adds the Momentum column to the DataFrame.    
+-MACD(df): This function calculates the Moving Average Convergence Divergence (MACD) indicator for a given DataFrame df. Currently, it is commented out and not used in the code.     
 -PPSR(df): Calculates Pivot Points, Supports, and Resistances (PPSR) for a given DataFrame df containing high, low, and close price values. The function adds columns for PP, R1, S1, R2, S2, R3, and S3 to the DataFrame.    
 -graficador2(indi, temporalidad, cols=None): This function generates candlestick charts using the mplfinance library. It takes an indicator name (indi) and a time frame (temporalidad) as inputs. If the indicator is "ppsr," it plots the PPSR values from the DataFrame using the specified color (b). Otherwise, it plots the indicator values from the DataFrame using the corresponding color (b, g, or r). The function returns the generated chart and the modified DataFrame.
 
@@ -223,7 +229,7 @@ This deployment process enables easy access to image and CSV URLs associated wit
 * [Matplotlib version 3.2.2](https://matplotlib.org/)
 * [Numpy version 1.21.5](https://numpy.org/) 
 * [Docker Compose version v2.18.1](https://www.docker.com)
-* [requests](https://docs.python-requests.org/)
+* [requests ](https://docs.python-requests.org/)
 * [mplfinance==0.12.9b7](https://pypi.org/project/mplfinance/)
 * [psycopg2_binary==2.9.6](https://pypi.org/project/psycopg2-binary/)
 * [SQLAlchemy==1.4.39](https://www.sqlalchemy.org/)
@@ -265,4 +271,5 @@ https://github.com/jealous/stockstats
 https://docs.sqlalchemy.org/en/20/
 https://www.coingecko.com/en/api/documentation  
 https://docs.docker.com/desktop/
+
 '''
